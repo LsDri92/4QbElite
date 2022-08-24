@@ -1,0 +1,19 @@
+header {
+    display: block;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    height: auto;
+
+}
+
+.logo {
+    float: left;
+    opacity: 0.5;
+}
+
+h1 {
+    color: darkgoldenrod;
+    text-align: end;
+    padding-right: 20px;
+}

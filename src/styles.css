@@ -1,1 +1,43 @@
-/* You can add global styles to this file, and also import other style files */
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    min-height: auto;
+    min-width: 100%;
+    background-image: url(https://wallpapercave.com/wp/NJ2QvoL.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.container-fluid{
+    display: flexbox;
+    align-content: space-around;
+    justify-content: center;
+}
+
+
+h1 {
+    font-family: 'Noto Serif Display';
+    color: rgb(240, 231, 230);
+}
+
+p {
+    color: wheat;
+    font-size: 1.2rem;
+}
+
+h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    line-height: 100px;
+    color: rgb(45, 86, 223);
+
+}
+
+h3 {
+    font-size: 1.5rem;
+    line-height: 50px;
+}
