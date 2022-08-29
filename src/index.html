@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>4QbElite</title>
@@ -8,21 +9,94 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
-<body>
+
+<body ng-app="ngAnimate">
   <app-root></app-root>
 </body>
+
 </html>
 
 <script>
 
 
-  $(document).ready(function(){
-    $(".flip").click(function(){
+$(document).ready(function () {
+    $(".flip").click(function () {
       $(".panel").slideToggle("slow");
     });
   });
- 
-  $( document ).click(function() {
-    $( ".toggle" ).slideToggle();
+
+  $(document).click(function () {
+    $(".toggle").slideToggle();
   });
-  </script>
+
+  $(window).on('load', function () {
+    $('.outer-loader').fadeOut("slow", "linear", restart);
+  });
+
+  window.transitionToPage = function (href) {
+    document.querySelector('body').style.opacity = 0
+    setTimeout(function () {
+      window.location.href = href
+    }, 500)
+  }
+
+  document.addEventListener('DOMContentLoaded', function (event) {
+    document.querySelector('body').style.opacity = 1
+  })
+
+  var responsiveSlider = function () {
+
+var slider = document.getElementById("slider");
+var sliderWidth = slider.offsetWidth;
+var slideList = document.getElementById("slideWrap");
+var count = 1;
+var items = slideList.querySelectorAll("li").length;
+var prev = document.getElementById("prev");
+var next = document.getElementById("next");
+
+window.addEventListener('resize', function () {
+  sliderWidth = slider.offsetWidth;
+});
+
+var prevSlide = function () {
+  if (count > 1) {
+    count = count - 2;
+    slideList.style.left = "-" + count * sliderWidth + "px";
+    count++;
+  }
+  else if (count = 1) {
+    count = items - 1;
+    slideList.style.left = "-" + count * sliderWidth + "px";
+    count++;
+  }
+};
+
+var nextSlide = function () {
+  if (count < items) {
+    slideList.style.left = "-" + count * sliderWidth + "px";
+    count++;
+  }
+  else if (count = items) {
+    slideList.style.left = "0px";
+    count = 1;
+  }
+};
+
+next.addEventListener("click", function () {
+  nextSlide();
+});
+
+prev.addEventListener("click", function () {
+  prevSlide();
+});
+
+setInterval(function () {
+  nextSlide()
+}, 4000);
+
+};
+
+window.onload = function () {
+responsiveSlider();
+}
+</script>

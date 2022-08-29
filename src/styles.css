@@ -4,15 +4,17 @@ html {
 }
 
 body {
-    min-height: auto;
+    
     min-width: 100%;
     background-image: url(https://wallpapercave.com/wp/NJ2QvoL.jpg);
     background-size: cover;
     background-position: center;
-
+       opacity: 0;
+    transition: opacity .5s;
 }
 
-.container-fluid{
+
+.container-fluid {
     display: flexbox;
     align-content: space-around;
     justify-content: center;
