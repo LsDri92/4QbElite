@@ -18,5 +18,11 @@ h1 {
     color: darkgoldenrod;
     text-align: end;
     padding-right: 20px;
+    text-shadow:1px 1px rgb(0, 0, 0);
+   text-rendering:optimizeLegibility;
 }
 
+h4{
+    color: coral;
+    text-align: end;
+}
