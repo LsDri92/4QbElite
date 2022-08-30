@@ -1,16 +1,18 @@
 html {
     height: 100%;
     width: 100%;
+    left: 0;
 }
 
 body {
-    
+
     min-width: 100%;
     background-image: url(https://wallpapercave.com/wp/NJ2QvoL.jpg);
     background-size: cover;
     background-position: center;
-       opacity: 0;
+    opacity: 0;
     transition: opacity .5s;
+    left: 0;
 }
 
 
@@ -42,4 +44,22 @@ h2 {
 h3 {
     font-size: 1.5rem;
     line-height: 50px;
+}
+
+@media (max-width: 900px) {
+    body {
+        background-repeat: no-repeat;
+        background-size: cover;
+        scroll-behavior: smooth;
+        background-attachment: fixed;
+    }
+}
+
+@media (min-width: 900px) {
+    body {
+        background-repeat: no-repeat;
+        background-size: cover;
+        scroll-behavior: smooth;
+        background-attachment: fixed;
+    }
 }

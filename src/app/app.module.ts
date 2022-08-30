@@ -10,6 +10,7 @@ import { MainComponent } from './components/main/main.component';
 import { RouterModule } from '@angular/router';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +18,8 @@ import { RouterModule } from '@angular/router';
     CardsComponent,
     FooterComponent,
     HowToComponent,
-    MainComponent
+    MainComponent,
+  
 
   ],
   imports: [

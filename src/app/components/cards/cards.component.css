@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    height: 90%;
+    height: 100%;
 
 
 }
@@ -29,7 +29,7 @@
 .card1 {
 
     padding: 5px 5px 5px 5px;
-    background-color: rgba(255, 0, 0, 0.50);
+    background-color: rgba(255, 0, 0, 0.712);
     box-shadow: #111;
     overflow: hidden;
 }
@@ -38,7 +38,7 @@
 .card2 {
 
     padding: 5px 5px 5px 5px;
-    background-color: rgba(0, 0, 255, 0.8);
+    background-color: rgba(0, 0, 255, 0.849);
     box-shadow: #111;
     overflow: hidden;
 }
@@ -46,7 +46,7 @@
 .card3 {
 
     padding: 5px 5px 5px 5px;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.829);
     box-shadow: #111;
     overflow: hidden;
 
@@ -55,7 +55,7 @@
 .card4 {
 
     padding: 5px 5px 5px 5px;
-    background-color: rgba(0, 128, 0, 0.50);
+    background-color: rgba(0, 128, 0, 0.692);
     box-shadow: #111;
     overflow: hidden;
 }
@@ -64,6 +64,7 @@
 .flip {
     text-align: center;
 }
+
 
 /*.panel {
     display: none;
@@ -106,21 +107,34 @@ p {
     background: rgba(248, 0, 0, 0.726)
 }
 
+#statsCard2 a:hover {
+    color: blue;
+}
+
 #statsCard3 {
     background: rgba(221, 4, 4, 0.623)
+}
+
+#statsCard3 a:hover {
+    color: rgb(255, 255, 255);
 }
 
 #statsCard4 {
     background: rgba(3, 179, 17, 0.51)
 }
 
+#statsCard4 a:hover {
+    color: rgb(231, 253, 31);
+}
 
-a{
+
+a {
     text-decoration: none;
     color: black;
-  
+
 }
+
 a:hover {
     color: rgb(211, 0, 0);
-  }
+}
 
